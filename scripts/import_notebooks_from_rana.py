@@ -52,6 +52,7 @@ OLD_DATA_PATH = "C:/Users/srika/OneDrive/Desktop/SF_DATA_EMISSION_PEAK.xlsx"
 NEW_DATA_PATH = "../../data/SF_DATA_EMISSION_PEAK.xlsx"
 
 
+
 def patch_notebook_paths(nb_path: Path) -> None:
     """Replace hard-coded Desktop Excel path with repo-relative data path."""
     nb = json.loads(nb_path.read_text(encoding="utf-8"))
