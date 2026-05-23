@@ -1,0 +1,14 @@
+name: emission_wavelength_nm_rfecv_baseline
+task: emission_wl
+target_column: EMISSION_PEAK_NM
+drop_columns:
+  - EMISSION_PEAK_NM
+  - PHOTON_ENERGY_EV
+excel_sheet: SF_DATA_EMISSION_PEAK_NEW
+data_file: data/SF_DATA_EMISSION_PEAK.xlsx
+add_hydrogens: false
+feature_selection: rfecv
+hyperparameter_tuning: false
+correlation_threshold: 0.90
+rfecv_max_depth: 5
+rfecv_min_samples_leaf: 6

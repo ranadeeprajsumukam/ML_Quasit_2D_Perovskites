@@ -1,0 +1,12 @@
+name: emission_wavelength_nm_select_from_model_baseline
+task: emission_wl
+target_column: EMISSION_PEAK_NM
+drop_columns:
+  - EMISSION_PEAK_NM
+  - PHOTON_ENERGY_EV
+excel_sheet: SF_DATA_EMISSION_PEAK_NEW
+data_file: data/SF_DATA_EMISSION_PEAK.xlsx
+add_hydrogens: false
+feature_selection: select_from_model
+hyperparameter_tuning: false
+correlation_threshold: 0.90

@@ -1,0 +1,15 @@
+name: eqe_percent_rfe_20_features_tuned
+task: eqe
+target_column: EQE_percent
+drop_columns:
+  - EQE_percent
+excel_sheet: EQE_CLEANED
+data_file: data/SF_DATA_EMISSION_PEAK.xlsx
+add_hydrogens: false
+feature_selection: rfe
+hyperparameter_tuning: true
+correlation_threshold: 0.80
+variance_threshold: 0.05
+fill_na_with_zero: false
+eqe_preprocessing: true
+rfe_n_features: 20

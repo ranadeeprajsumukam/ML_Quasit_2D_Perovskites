@@ -1,0 +1,12 @@
+name: emission_photon_energy_add_hydrogens_tuned_select_from_model
+task: emission_ev
+target_column: PHOTON_ENERGY_EV
+drop_columns:
+  - EMISSION_PEAK_NM
+  - PHOTON_ENERGY_EV
+excel_sheet: SF_DATA_EMISSION_PEAK_NEW
+data_file: data/SF_DATA_EMISSION_PEAK.xlsx
+add_hydrogens: true
+feature_selection: select_from_model
+hyperparameter_tuning: true
+correlation_threshold: 0.90

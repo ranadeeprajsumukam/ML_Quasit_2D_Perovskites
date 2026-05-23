@@ -1,0 +1,14 @@
+name: emission_photon_energy_add_hydrogens_tuned_rfecv
+task: emission_ev
+target_column: PHOTON_ENERGY_EV
+drop_columns:
+  - EMISSION_PEAK_NM
+  - PHOTON_ENERGY_EV
+excel_sheet: SF_DATA_EMISSION_PEAK_NEW
+data_file: data/SF_DATA_EMISSION_PEAK.xlsx
+add_hydrogens: true
+feature_selection: rfecv
+hyperparameter_tuning: true
+correlation_threshold: 0.90
+rfecv_max_depth: 7
+rfecv_min_samples_leaf: 4

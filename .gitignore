@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML outputs
+outputs/
+catboost_info/
+results_table.html
+
+# Data (keep README; do not commit large proprietary spreadsheets by default)
+data/*.xlsx
+data/*.xls
+!data/README.md
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Temp extraction scripts
+_extract_*.py
+_nb_code_dump/

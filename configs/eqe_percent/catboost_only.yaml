@@ -1,0 +1,15 @@
+name: eqe_percent_catboost_only
+task: eqe
+target_column: EQE_percent
+drop_columns:
+  - EQE_percent
+excel_sheet: EQE_CLEANED
+data_file: data/SF_DATA_EMISSION_PEAK.xlsx
+add_hydrogens: false
+feature_selection: select_from_model
+hyperparameter_tuning: false
+correlation_threshold: 0.90
+fill_na_with_zero: false
+eqe_preprocessing: true
+eqe_split_numeric_categorical: true
+eqe_catboost_architecture_only: true
